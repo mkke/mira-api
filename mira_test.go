@@ -12,7 +12,7 @@ func TestConnect(t *testing.T) {
 		t.Fatal(errors.New("hid not supported on this platform"))
 	}
 
-	deviceInfos := hid.Enumerate(Boox_Mira_VID, Boox_Mira_PID)
+	deviceInfos := hid.Enumerate(BooxMiraVID, BooxMiraPID)
 	if len(deviceInfos) == 0 {
 		t.Fatal(errors.New("no connected device found"))
 	}

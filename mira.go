@@ -42,7 +42,7 @@ const (
 )
 
 func SendCommand(device *hid.Device, command Command, data ...byte) error {
-	_, err := device.SendFeatureReport(append([]byte{0, byte(command)}, data...))
+	_, err := device.Write(append([]byte{0, byte(command)}, data...))
 	return err
 }
 
