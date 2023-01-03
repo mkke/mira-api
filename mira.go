@@ -7,10 +7,10 @@ import (
 
 const (
 	// Boox Mira USB vendor id
-	Boox_Mira_VID uint16 = 0x0416
+	BooxMiraVID uint16 = 0x0416
 
 	// Boox Mira USB product id
-	Boox_Mira_PID uint16 = 0x5020
+	BooxMiraPID uint16 = 0x5020
 )
 
 // Command encodes wire device command codes
