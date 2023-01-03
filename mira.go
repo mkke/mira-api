@@ -3,6 +3,7 @@ package miraapi
 import (
 	"github.com/bearsh/hid"
 	"golang.org/x/exp/constraints"
+	"time"
 )
 
 const (
@@ -12,6 +13,9 @@ const (
 	// Boox Mira USB product id
 	BooxMiraPID uint16 = 0x5020
 )
+
+// CommandDelay defines the standard delay to wait between sending commands
+var CommandDelay = 20 * time.Millisecond
 
 // Command encodes wire device command codes
 type Command byte
