@@ -15,7 +15,7 @@ const (
 )
 
 // CommandDelay defines the standard delay to wait between sending commands
-var CommandDelay = 20 * time.Millisecond
+var CommandDelay = 50 * time.Millisecond
 
 // Command encodes wire device command codes
 type Command byte
